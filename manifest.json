@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Image Hover Zoom",
+  "version": "1.0",
+  "description": "Hover over an image to see a magnified view.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_title": "Image Hover Zoom"
+  },
+  "icons": {
+    "16": "images/icon128.png",
+    "48": "images/icon128.png",
+    "128": "images/icon128.png"
+  }
+}

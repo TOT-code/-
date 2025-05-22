@@ -1,0 +1,34 @@
+/* styles.css */
+.image-hover-preview-container {
+  position: fixed; /* Fixed position relative to the viewport */
+  display: none; /* Hidden by default */
+  z-index: 10000; /* Ensure it's on top of other elements */
+  border: 2px solid #ccc;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+  background-color: #fff; /* Background for the container */
+  overflow: hidden; /* In case the image is larger than container's max dimensions */
+}
+
+.image-hover-preview-container img {
+  display: block;
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+/* Notification Style */
+#hoverzoom-notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 10001; /* Higher than preview container */
+  font-family: sans-serif;
+  font-size: 14px;
+  display: none; /* Hidden by default */
+  text-align: center;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+}
